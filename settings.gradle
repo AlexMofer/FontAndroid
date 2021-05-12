@@ -1,0 +1,3 @@
+rootProject.name = "FontAndroid"
+include ':app'
+include ':font-android'

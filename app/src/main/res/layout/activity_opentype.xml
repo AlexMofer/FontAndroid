@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".opentype.OpenTypeActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/ot_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:theme="@style/ThemeOverlay.OpenType.ActionBar"
+        app:menu="@menu/opentype"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.OpenType.Popup"
+        app:title="@string/ot_label" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ot_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF9F9F9"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
