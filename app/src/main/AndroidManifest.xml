@@ -14,6 +14,7 @@
         tools:ignore="AllowBackup">
         <activity
             android:name=".font.FontActivity"
+            android:exported="true"
             android:theme="@style/Theme.OpenType.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
