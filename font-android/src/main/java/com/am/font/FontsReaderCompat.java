@@ -28,7 +28,9 @@ class FontsReaderCompat {
 
     static {
         final int api = Build.VERSION.SDK_INT;
-        if (api >= 28) {
+        if (api >= 31) {
+            IMPL = new FontsReaderApi31();
+        } else if (api >= 28) {
             IMPL = new FontsReaderApi28();
         } else if (api >= 26) {
             IMPL = new FontsReaderApi26();

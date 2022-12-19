@@ -26,7 +26,7 @@ import java.util.HashSet;
  */
 class Fallback {
     private final ArrayList<Font> mFonts = new ArrayList<>();// 字体
-    private String mLang;// 语言，可能为空，带空格表示多种语言
+    private String mLang;// 语言，可能为空，带空格表示多种语言，API 29以后用“,”隔开
     private String mVariant;// 变种，可能为空
     private final HashSet<String> mFallbackForSet = new HashSet<>();// 筛选
     private final ArrayList<Font> mFallbackForFonts = new ArrayList<>();// 字体

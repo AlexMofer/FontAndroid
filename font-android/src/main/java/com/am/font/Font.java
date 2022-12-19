@@ -36,6 +36,7 @@ class Font {
     private final int mIndex;// 字体集中的角标，该参数仅对ttc文件有效
     private final HashMap<String, Axis> mAxises = new HashMap<>();// 对称信息，可能为空
     private String mFallbackFor;// 作为备选字体，值为系统字体族名称（仅备选字体族中有效）
+    private String mPostScriptName;
 
     Font(String name, int weight, int style) {
         mName = name;
@@ -70,6 +71,14 @@ class Font {
 
     String getFallbackFor() {
         return mFallbackFor;
+    }
+
+    public void setPostScriptName(String postScriptName) {
+        mPostScriptName = postScriptName;
+    }
+
+    public String getPostScriptName() {
+        return mPostScriptName;
     }
 
     TypefaceItem convert() {

@@ -26,7 +26,7 @@ import java.util.List;
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class TypefaceFallback implements Parcelable {
-    private final String mLang;// 语言，可能为空（API 26 后仅一个，API 25 存在两个，表示匹配不到的语言的备选项），带空格表示多种语言
+    private final String mLang;// 语言，可能为空（API 26 后仅一个，API 25 存在两个，表示匹配不到的语言的备选项），带空格表示多种语言，API 29后改为“,”分隔多种语言。
     private final String mVariant;// 变种，可能为空
     private final List<TypefaceItem> mItems;// 子项
 
